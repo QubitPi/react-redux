@@ -1,0 +1,28 @@
+# Copyright (c) Jiaqi Liu.
+#
+# This source code is licensed under the MIT license found in the
+# LICENSE file in the root directory of this source tree.
+---
+name: Test
+
+'on':
+  workflow_call:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  test-documentation-build:
+    name: Test Documentation Build
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: website
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Install dependencies
+        run: yarn install
+      - name: Build documentation
+        run: yarn build
