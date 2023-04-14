@@ -37,11 +37,11 @@ const siteConfig = {
   title: 'React Redux', // Title for your website.
   onBrokenLinks: 'throw',
   tagline: 'Official React bindings for Redux',
-  url: 'https://react-redux.js.org', // Your website URL
-  baseUrl: '/',
+  url: 'https://QubitPi.github.io/',
+  baseUrl: '/react-redux/',
   // Used for publishing and more
   projectName: 'react-redux',
-  organizationName: 'reduxjs',
+  organizationName: 'QubitPi',
 
   // For no header links in the top nav bar -> headerLinks: [],
   /* path to images for header/footer */
