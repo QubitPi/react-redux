@@ -37,8 +37,8 @@ const siteConfig = {
   title: 'React Redux', // Title for your website.
   onBrokenLinks: 'throw',
   tagline: 'Official React bindings for Redux',
-  url: 'https://QubitPi.github.io/',
-  baseUrl: '/react-redux/',
+  url: 'https://react-redux.qubitpi.org/',
+  baseUrl: '/',
   // Used for publishing and more
   projectName: 'react-redux',
   organizationName: 'QubitPi',
