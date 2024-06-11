@@ -4,8 +4,8 @@
   <ShortName>React Redux</ShortName>
   <Description>Search React Redux</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://QubitPi.github.io/react-redux/img/favicon/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://QubitPi.github.io//react-redux/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://QubitPi.github.io//react-redux/opensearch.xml" />
-  <moz:SearchForm>https://QubitPi.github.io//react-redux/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://react-redux.qubitpi.org/img/favicon/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://react-redux.qubitpi.org//search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://react-redux.qubitpi.org//opensearch.xml" />
+  <moz:SearchForm>https://react-redux.qubitpi.org//</moz:SearchForm>
 </OpenSearchDescription>
