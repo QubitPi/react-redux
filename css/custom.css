@@ -92,7 +92,10 @@ blockquote {
   background-color: var(--ifm-blockquote-color);
   border-left: 6px solid var(--ifm-blockquote-color-dark);
   border-radius: var(--ifm-global-radius);
+}
 
+html[data-theme='dark'] blockquote code {
+  background-color: var(--ifm-color-emphasis-800);
 }
 
 .docusaurus-highlight-code-line {
@@ -171,12 +174,16 @@ a:visited {
   transform: rotateZ(180deg);
   -webkit-transition: -webkit-transform 0.2s linear;
   transition: -webkit-transform 0.2s linear;
-  transition-property: transform, -webkit-transform;
+  transition-property:
+    transform,
+    -webkit-transform;
   transition-duration: 0.2s, 0.2s;
   transition-timing-function: linear, linear;
   transition-delay: 0s, 0s;
   transition: transform 0.2s linear;
-  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+  transition:
+    transform 0.2s linear,
+    -webkit-transform 0.2s linear;
 }
 
 .menu .menu__list-item.menu__list-item--collapsed .menu__link--sublist:after {
@@ -227,3 +234,14 @@ a:visited {
   stroke: black;
 }
 
+/* course callout on home page */
+.course-callout.home-mid {
+  max-width: 900px;
+  margin: 1rem auto 2rem;
+}
+
+div[class*='announcementBar_'] {
+  /* Intentionally override the theme behavior,
+  so that the course banner image is effectively cropped*/ 
+  z-index: calc(var(--ifm-z-index-fixed) -1) !important;
+}
